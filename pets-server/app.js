@@ -10,9 +10,9 @@ app.get('/pet-listing', (req, res) => {
         pageTitle : "Pets",
         components: [
             {
-                type: "featuredPets",
+                type: "featuredImage",
                 data:{
-                    imageUrl: "https://www.google.com"
+                    imageUrl: "https://as2.ftcdn.net/v2/jpg/01/99/00/79/1000_F_199007925_NolyRdRrdYqUAGdVZV38P4WX8pYfBaRP.jpg"
                 }
             }
         ]

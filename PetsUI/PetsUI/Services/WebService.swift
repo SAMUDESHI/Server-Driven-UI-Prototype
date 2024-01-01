@@ -24,7 +24,7 @@ class WebService{
         let (data,response) = try await URLSession.shared.data(from: url)
         
         guard let httpResponse = response as? HTTPURLResponse,httpResponse.statusCode == 200 else{
-            NetworkError.invalidResponse
+            throw NetworkError.invalidResponse
         }
         
        return try JSONDecoder().decode(ScreenModel.self,from: data)

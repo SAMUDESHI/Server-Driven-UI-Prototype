@@ -7,9 +7,11 @@
 
 import Foundation
 
+@MainActor
 class PetListViewModel: ObservableObject{
     
     private var service : WebService
+    @Published var components: [UIComponents] = []
     
     init(service: WebService){
         self.service = service
@@ -18,6 +20,7 @@ class PetListViewModel: ObservableObject{
     func load() async{
         do{
             let screenModel = try await service.load(resource: Constant.Urls.petListing)
+            components = try screenModel.buildComponents()
         }catch{
             print(error)
         }
