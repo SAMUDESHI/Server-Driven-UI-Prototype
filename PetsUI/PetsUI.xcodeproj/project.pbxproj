@@ -14,6 +14,14 @@
 		33306E102B3FD28E00BC6DD2 /* PetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33306E0F2B3FD28E00BC6DD2 /* PetsUITests.swift */; };
 		33306E1A2B3FD28E00BC6DD2 /* PetsUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33306E192B3FD28E00BC6DD2 /* PetsUIUITests.swift */; };
 		33306E1C2B3FD28E00BC6DD2 /* PetsUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33306E1B2B3FD28E00BC6DD2 /* PetsUIUITestsLaunchTests.swift */; };
+		9CFAE8932B40157C00E49666 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFAE8922B40157C00E49666 /* WebService.swift */; };
+		9CFAE8962B4015B400E49666 /* Cosntant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFAE8952B4015B400E49666 /* Cosntant.swift */; };
+		9CFAE8992B40174400E49666 /* ScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFAE8982B40174400E49666 /* ScreenModel.swift */; };
+		9CFAE89C2B40190F00E49666 /* UIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFAE89B2B40190F00E49666 /* UIComponents.swift */; };
+		9CFAE89E2B40199100E49666 /* FeaturedImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFAE89D2B40199100E49666 /* FeaturedImageComponent.swift */; };
+		9CFAE8A02B40313400E49666 /* FeaturedImageUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFAE89F2B40313400E49666 /* FeaturedImageUIModel.swift */; };
+		9CFAE8A32B40323900E49666 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFAE8A22B40323900E49666 /* View+Extensions.swift */; };
+		9CFAE8A62B40332100E49666 /* PetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFAE8A52B40332100E49666 /* PetListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		33306E152B3FD28E00BC6DD2 /* PetsUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetsUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33306E192B3FD28E00BC6DD2 /* PetsUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsUIUITests.swift; sourceTree = "<group>"; };
 		33306E1B2B3FD28E00BC6DD2 /* PetsUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9CFAE8922B40157C00E49666 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		9CFAE8952B4015B400E49666 /* Cosntant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cosntant.swift; sourceTree = "<group>"; };
+		9CFAE8982B40174400E49666 /* ScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenModel.swift; sourceTree = "<group>"; };
+		9CFAE89B2B40190F00E49666 /* UIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponents.swift; sourceTree = "<group>"; };
+		9CFAE89D2B40199100E49666 /* FeaturedImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedImageComponent.swift; sourceTree = "<group>"; };
+		9CFAE89F2B40313400E49666 /* FeaturedImageUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedImageUIModel.swift; sourceTree = "<group>"; };
+		9CFAE8A22B40323900E49666 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		9CFAE8A52B40332100E49666 /* PetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +110,12 @@
 		33306DFD2B3FD28D00BC6DD2 /* PetsUI */ = {
 			isa = PBXGroup;
 			children = (
+				9CFAE8A42B40330F00E49666 /* ViewModel */,
+				9CFAE8A12B40322100E49666 /* Extension */,
+				9CFAE89A2B4018FA00E49666 /* Components */,
+				9CFAE8972B40173300E49666 /* UIModels */,
+				9CFAE8942B4015A800E49666 /* Utils */,
+				9CFAE8912B40156400E49666 /* Services */,
 				33306DFE2B3FD28D00BC6DD2 /* PetsUIApp.swift */,
 				33306E002B3FD28D00BC6DD2 /* ContentView.swift */,
 				33306E022B3FD28E00BC6DD2 /* Assets.xcassets */,
@@ -125,6 +147,56 @@
 				33306E1B2B3FD28E00BC6DD2 /* PetsUIUITestsLaunchTests.swift */,
 			);
 			path = PetsUIUITests;
+			sourceTree = "<group>";
+		};
+		9CFAE8912B40156400E49666 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9CFAE8922B40157C00E49666 /* WebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9CFAE8942B4015A800E49666 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9CFAE8952B4015B400E49666 /* Cosntant.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9CFAE8972B40173300E49666 /* UIModels */ = {
+			isa = PBXGroup;
+			children = (
+				9CFAE8982B40174400E49666 /* ScreenModel.swift */,
+				9CFAE89F2B40313400E49666 /* FeaturedImageUIModel.swift */,
+			);
+			path = UIModels;
+			sourceTree = "<group>";
+		};
+		9CFAE89A2B4018FA00E49666 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9CFAE89B2B40190F00E49666 /* UIComponents.swift */,
+				9CFAE89D2B40199100E49666 /* FeaturedImageComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9CFAE8A12B40322100E49666 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9CFAE8A22B40323900E49666 /* View+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9CFAE8A42B40330F00E49666 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9CFAE8A52B40332100E49666 /* PetListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +329,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFAE8932B40157C00E49666 /* WebService.swift in Sources */,
+				9CFAE8A32B40323900E49666 /* View+Extensions.swift in Sources */,
+				9CFAE89C2B40190F00E49666 /* UIComponents.swift in Sources */,
+				9CFAE8A02B40313400E49666 /* FeaturedImageUIModel.swift in Sources */,
+				9CFAE8A62B40332100E49666 /* PetListViewModel.swift in Sources */,
+				9CFAE89E2B40199100E49666 /* FeaturedImageComponent.swift in Sources */,
+				9CFAE8992B40174400E49666 /* ScreenModel.swift in Sources */,
 				33306E012B3FD28D00BC6DD2 /* ContentView.swift in Sources */,
 				33306DFF2B3FD28D00BC6DD2 /* PetsUIApp.swift in Sources */,
+				9CFAE8962B4015B400E49666 /* Cosntant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,14 +502,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PetsUI/Preview Content\"";
-				DEVELOPMENT_TEAM = LJB4NY42B7;
+				DEVELOPMENT_TEAM = QY7JP5H2FW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,9 +517,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.saavajmediaworks.www.PetsUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -451,14 +534,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PetsUI/Preview Content\"";
-				DEVELOPMENT_TEAM = LJB4NY42B7;
+				DEVELOPMENT_TEAM = QY7JP5H2FW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,9 +549,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.saavajmediaworks.www.PetsUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
